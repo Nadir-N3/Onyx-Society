@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ONYX Society – Black Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.12.1/dist/ethers.min.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="ONYX" />
+      <span>ONYX Society</span>
+    </div>
+    <button id="connectBtn" class="btn">Connect Wallet</button>
+  </header>
+
+  <main class="hero">
+    <div class="copy">
+      <h1>Black Card for the Digital Elite</h1>
+      <p>Mint an ultra-premium membership that unlocks curated perks across hotels, dining, travel, and experiences.
+      Built as a best‑in‑class ERC‑721 with on‑chain perk receipts, royalties, and allowlist support.</p>
+      <div class="stats">
+        <div><span id="supply">—</span><label>Minted</label></div>
+        <div><span id="max">—</span><label>Max</label></div>
+        <div><span id="price">—</span><label>Price (ETH)</label></div>
+      </div>
+
+      <div class="mint-box">
+        <div class="qty">
+          <button id="minus">−</button>
+          <input id="quantity" type="number" value="1" min="1" />
+          <button id="plus">+</button>
+        </div>
+        <button id="mintBtn" class="btn primary">Mint Now</button>
+      </div>
+
+      <p class="note">Have an allowlist spot? Use the CLI to mint with your proof, or integrate here with your backend.</p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <small>© ONYX Society. Smart contract open-sourced. Luxury, engineered.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
